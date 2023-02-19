@@ -18,7 +18,6 @@ const Info = styled.div`
    height: 100%;
    top: 0;
    left: 0;
-   background-color: yellow;
    display: flex;
    flex-direction: column;
    justify-content: center;
