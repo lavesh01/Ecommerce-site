@@ -3,12 +3,14 @@ import { Add, Remove } from '@mui/icons-material'
 import Announcement from '../components/Announcement'
 import Navbar from '../components/Navbar'
 import React from 'react'
+import {mobile} from "../responsive"
 import styled from 'styled-components'
 
 const Container = styled.div``
 const Wrapper = styled.div`
     padding: 50px;
     display: flex;
+    ${mobile({ padding: "10px", flexDirection: "column"})}
 `
 const ImgContainer = styled.div`
     flex: 1;
@@ -17,10 +19,14 @@ const Image = styled.img`
     width: 100%;
     height: 90vh;
     object-fit: cover;
+    ${mobile({ height : "40vh"})}
+
 `
 const InfoContainer = styled.div`
     flex: 1;
     padding: 0 50px;
+    ${mobile({ padding: "10px"})}
+
 `
 const Title = styled.h1`
     font-weight: 200;
@@ -37,7 +43,9 @@ const FilterContainer = styled.div`
     width: 50%;
     margin: 30px 0px; 
     display: flex;
-    justify-content: space-between;`
+    justify-content: space-between;
+    ${mobile({ width: "100%"})}
+`
 
 const Filter = styled.div`
     display: flex;
@@ -67,6 +75,7 @@ const AddContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${mobile({ width: "100%"})}
 `
 const AmountContainer = styled.div`
     display: flex;

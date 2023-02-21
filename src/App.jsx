@@ -1,14 +1,14 @@
-// import Home from "./pages/Home";
-// import ProductList from "./pages/ProductList";
-
 // import Product from "./pages/Product";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import Cart from "./pages/Cart";
+// import Home from "./pages/Home";
+
+// import Login from "./pages/Login";
+// import ProductList from "./pages/ProductList";
+// import Register from "./pages/Register";
 
 const App = () => {
   return <>
-  <Register />
-  <Login />
+    <Cart/>
   </>
 };
 

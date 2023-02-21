@@ -1,6 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material';
 import React, {useState} from 'react'
 
+import { mobile } from '../responsive';
 import { sliderItems } from '../data';
 import styled from 'styled-components'
 
@@ -11,6 +12,7 @@ const Container = styled.div`
    position: relative;
    overflow: hidden;
    background-color: #${props => props.bg};
+   ${mobile({ display: "none"})}
 `
 const Arrow = styled.div`
    width: 50px;
