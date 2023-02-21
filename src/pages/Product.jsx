@@ -56,7 +56,10 @@ const FilterColor = styled.div`
     margin: 0px 5px;
     cursor: pointer;
 `
-const FilterSize = styled.select``
+const FilterSize = styled.select`
+    margin-left: 10px;
+    padding: 5px;
+`
 const FilterSizeOption = styled.option``
 
 const AddContainer = styled.div`
@@ -67,8 +70,8 @@ const AddContainer = styled.div`
 `
 const AmountContainer = styled.div`
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     font-weight: 700;
 `
 const Amount = styled.span`
@@ -87,6 +90,7 @@ const Button = styled.button`
     background-color: white;
     font-weight: 500;
     cursor: pointer;
+    margin-left: 20px;
 
     &:hover{
         background-color: #f8f4f4;
